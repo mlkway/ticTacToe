@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.raywenderlich.tbc_shemajamebeli_four.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_nineDimFragment"
+            app:destination="@id/nineDimFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_twentyFiveDimFragment"
+            app:destination="@id/twentyFiveDimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nineDimFragment"
+        android:name="com.raywenderlich.tbc_shemajamebeli_four.NineDimFragment"
+        android:label="fragment_nine_dim"
+        tools:layout="@layout/fragment_nine_dim" />
+    <fragment
+        android:id="@+id/twentyFiveDimFragment"
+        android:name="com.raywenderlich.tbc_shemajamebeli_four.TwentyFiveDimFragment"
+        android:label="fragment_twenty_five_dim"
+        tools:layout="@layout/fragment_twenty_five_dim" />
+</navigation>
